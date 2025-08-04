@@ -1,0 +1,30 @@
+import { Outlet, useNavigation } from 'react-router-dom';
+import Footer from './Footer/Footer';
+import Header from './Header/Header';
+import Breadcrumbs from './Breadcrumbs/Breadcrumbs';
+import './Layout.scss';
+
+function Layout() {
+  const navigation = useNavigation();
+
+  if (navigation.state !== 'idle') {
+    return (
+      <div className="loading-overlay">
+        <h1>LOADING...</h1>
+      </div>
+    );
+  }
+
+  return (
+    <div className="layout-container">
+      <Header />
+      <main>
+        <Breadcrumbs />
+        <Outlet />
+      </main>
+      <Footer  />
+    </div>
+  );
+}
+
+export default Layout;

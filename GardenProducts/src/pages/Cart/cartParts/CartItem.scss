@@ -1,0 +1,305 @@
+@use '../../../assets/styles/variables' as nav;
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: nav.$bg-color-white;
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(55, 62, 39, 0.07);
+  padding: 0; 
+  gap: 8px;
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+
+  &__img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    background: nav.$bg-color-white;
+    border-radius: 12px 0 0 12px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 90px;
+    min-height: 90px;
+    overflow: hidden;
+  }
+
+  &__badge {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #ff8c1a;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    z-index: 2;
+    max-width: calc(100% - 16px);
+    pointer-events: none;
+  }
+
+  &__info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    padding: 16px 0; // добавляем вертикальный внутренний отступ для содержимого
+    overflow: hidden;
+  }
+
+  &__title-link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: 500;
+    color: nav.$font-darkColor;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    background: nav.$bg-color-white;
+    border: 1px solid nav.$border-color-grey;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 0;
+    min-width: 0;
+    flex-shrink: 0;
+
+    button,
+    span {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+      background: none;
+      border: none;
+      color: nav.$font-darkColor;
+      cursor: pointer;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      transition: background 0.12s;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    button:hover {
+      background: #f2f2f2;
+    }
+
+    .cart-item__btn-minus {
+      border-right: 1px solid nav.$border-color-grey;
+      border-radius: 6px 0 0 6px;
+    }
+
+    .cart-item__btn-plus {
+      border-left: 1px solid nav.$border-color-grey;
+      border-radius: 0 6px 6px 0;
+    }
+  }
+
+  &__prices {
+    display: block;
+    margin-top: 8px;
+
+    .cart-item__price {
+      font-size: 20px;
+      font-weight: 600;
+      color: nav.$font-darkColor;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .cart-item__old-price {
+      font-size: 14px;
+      color: nav.$font-greyColor;
+      font-weight: 500;
+      text-decoration: line-through;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  &__remove {
+    position: absolute;
+    top: -6px;
+    right: 4px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: nav.$font-darkColor;
+    cursor: pointer;
+    margin-left: 6px;
+    align-self: flex-start;
+    transition: color 0.2s;
+    z-index: 1;
+
+    &:hover {
+      color: #cc0808;
+    }
+  }
+}
+
+.cart-item,
+.cart-item * {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+// 481px–768px: цены сбоку от счётчика
+@media (min-width: 481px) and (max-width: 768px) {
+  .cart-item {
+    gap: 14px;
+
+    &__img {
+      width: 120px;
+      height: 120px;
+      border-radius: 12px 0 0 12px;
+      min-width: 120px;
+      min-height: 120px;
+    }
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 8px;
+      max-width: 160px;
+    }
+
+    &__row {
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &__prices {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 8px;
+
+      .cart-item__price { font-size: 24px; }
+      .cart-item__old-price { font-size: 16px; }
+    }
+    &__remove {
+      top: -4px;
+      right: 8px;
+    }
+  }
+}
+
+// 769px–1000px: цены под счётчиком
+@media (min-width: 769px) and (max-width: 1000px) {
+  .cart-item {
+    &__img {
+      width: 150px;
+      height: 150px;
+      border-radius: 12px 0 0 12px;
+      min-width: 140px;
+      min-height: 140px;
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      max-width: 230px;
+    }
+
+    &__row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+
+    &__prices {
+      display: block;
+      margin-top: 8px;
+
+      .cart-item__price { font-size: 28px; }
+      .cart-item__old-price { font-size: 18px; }
+    }
+    &__remove {
+      top: -4px;
+      right: 8px;
+    }
+  }
+}
+
+// 768px+: бейдж видим
+@media (min-width: 768px) {
+  .cart-item__badge {
+    display: inline-block;
+  }
+}
+
+// 1001px+: цены сбоку от счётчика
+@media (min-width: 1001px) {
+  .cart-item {
+    &__img {
+      width: 180px;
+      height: 180px;
+      border-radius: 12px 0 0 12px;
+      min-width: 180px;
+      min-height: 180px;
+    }
+
+    &__title {
+      font-size: 22px;
+      margin-bottom: 10px;
+      max-width: 320px;
+    }
+
+    &__row {
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &__prices {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 8px;
+      
+
+      .cart-item__price { font-size: 32px; }
+      .cart-item__old-price { font-size: 20px; }
+    }
+    &__remove {
+      top: 0px;
+      right: 8px;
+    }
+  }
+}

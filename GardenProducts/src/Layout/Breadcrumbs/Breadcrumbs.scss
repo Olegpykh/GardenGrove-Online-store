@@ -1,0 +1,60 @@
+@use '../../assets/styles/variables' as nav;
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.breadcrumb-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs a {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid nav.$font-light-grey;
+  border-radius: 6px;
+  color: nav.$font-greyColor;
+}
+
+.breadcrumb-link.active {
+  font-weight: 600;
+  color: nav.$font-darkColor;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  overflow: hidden;
+}
+
+.breadcrumb-item a {
+  text-overflow: ellipsis;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 120px;
+}
+
+.breadcrumb-separator {
+  display: inline-block;
+  width: 16px;
+  height: 1px;
+  background-color: nav.$font-light-grey;
+}
+
+@media (max-width: 1000px) {
+  .breadcrumbs {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .breadcrumbs {
+    margin-left: 20px;
+    margin-top: 32px;
+  }
+}

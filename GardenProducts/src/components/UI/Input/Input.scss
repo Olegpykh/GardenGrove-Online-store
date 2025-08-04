@@ -1,0 +1,26 @@
+@use '../../../assets/styles/variables' as nav;
+
+.input {
+  padding: 16px 32px;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.sale__form-control {
+  background: none;
+  border-color: nav.$bg-color-lightTheme;
+
+  &::placeholder {
+    color: nav.$font-lightColor;
+  }
+}
+
+.order__form-control {
+   background-color: nav.$bg-color-white;
+   border-color: nav.$font-light-grey;
+   
+   &::placeholder {
+    color: nav.$font-greyColor;
+  }
+}

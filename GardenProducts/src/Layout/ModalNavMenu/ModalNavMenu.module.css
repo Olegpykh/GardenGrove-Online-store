@@ -1,0 +1,168 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  transition: right 0.3s ease;
+}
+
+.modal.active {
+  right: 0;
+}
+
+.modalContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+  background: #FFFFF1;
+  padding: 40px 30px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+
+.modal.active .modalContent {
+  transform: translateX(0);
+}
+
+.modal.night_mode .modalContent {
+  background: #333;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.closeIcon:hover {
+  color: #92A134;
+  transform: scale(1.1);
+}
+
+.modal.night_mode .closeIcon {
+  color: #ffffff;
+}
+
+.textDiscountContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.navMenu {
+  width: 100%;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navItem {
+  width: 100%;
+}
+
+.navLink {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  color: #92A134;
+  padding-left: 10px;
+}
+
+.modal.night_mode .navLink {
+  color: #ffffff;
+}
+
+.discountButton {
+  width: 100%;
+  height: 44px;
+  background-color: #92A134;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.discountButton:hover {
+  background-color: #7D8F2D;
+  transform: translateY(-2px);
+}
+
+/* 480px макет */
+@media (max-width: 480px) {
+  .modalContent {
+    width: 60%;
+    padding: 25px 20px;
+  }
+  
+  .closeButton {
+    top: 15px;
+    right: 15px;
+  }
+  
+  .textDiscountContainer {
+    margin-top: 50px;
+    gap: 30px;
+  }
+  
+  .navLink {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  
+  .discountButton {
+    font-size: 13px;
+    height: 38px;
+  }
+}
+
+/* 360px макет */
+@media (max-width: 360px) {
+  .modalContent {
+    width: 50%;
+    padding: 20px 15px;
+  }
+  
+  .navLink {
+    font-size: 14px;
+  }
+  
+  .discountButton {
+    font-size: 12px;
+    height: 36px;
+  }
+}

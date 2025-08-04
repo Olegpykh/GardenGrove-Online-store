@@ -1,22 +1,8 @@
-import { useState } from 'react'
+import { RouterProvider } from "react-router-dom";
+import { router} from "./router/router";
 
-import './App.css'
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
-function App() {
-  
-
-  return (
-    <>
-     
-
-    <p>Hallo Bro</p>
-
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-
-    </>
-  )
-}
-
-export default App
+export default App;
