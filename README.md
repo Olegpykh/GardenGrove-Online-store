@@ -1,337 +1,131 @@
-ProductsGarden 🌱
+This project is documented in English for global accessibility. I am fluent in German and happy to provide additional documentation or communication in German as needed.
 
-ProductsGarden is an online store for garden products, offering a seamless user experience to browse, filter, and sort products, add them to favorites or cart, apply discounts, and place orders. The application supports light and dark themes and is fully responsive for all devices.
+🌱 ProductsGarden
 
+ProductsGarden is a responsive e-commerce web application designed for gardening enthusiasts. It offers a user-friendly interface to browse, filter, and purchase garden products, with support for themes, discounts, and smooth navigation.
 
+👉 www.code-masters.onrender.com
 
-🔗 Links
+🔗 Figma Design: Figma Link Here (replace with actual URL)
 
+✨ Key Features
 
+🛍️ Product Browsing with detailed views
 
+🔎 Filtering & Sorting by categories, price, name, etc.
 
+❤️ Favorites functionality with persistent storage
 
-Demo: code-masters.onrender.com
+🛒 Shopping Cart with full order flow and local persistence
 
+💸 5% Discount on first orders (via coupon)
 
+🎁 50% Daily Random Discount on one product
 
-Figma Design: Figma Link
+🌙 Light/Dark Theme Toggle with Local Storage support
 
-
-
-✨ Features
-
-
-
-
-
-Browse all products with detailed information
-
-
-
-Filter products by categories and price
-
-
-
-Sort products by price, name, or other criteria
-
-
-
-Add products to favorites
-
-
-
-Manage cart and place orders
-
-
-
-Apply a 5% discount coupon for first orders
-
-
-
-Enjoy a random daily 50% discount on one product
-
-
-
-Toggle between light and dark themes
-
-
-
-Fully responsive design for all screen sizes
-
-
+📱 Responsive Design for mobile, tablet, and desktop
 
 🛠 Technology Stack
+⚛️ React
 
-React
+Core UI Framework
 
+Hooks Used:
 
+useState, useEffect, useContext
 
+StrictMode for dev validation
 
+🔄 React Router DOM (v6.4+)
 
-Core framework for building the user interface
+Navigation & routing
 
+Hooks Used:
 
+useLoaderData, useParams, useLocation, useNavigation, useRouteError, useMatches
 
-Hooks:
+Components: RouterProvider, Link, Outlet
 
+📦 Redux Toolkit
 
-
-
-
-useState — Manages local state (filters, modals, cart)
-
-
-
-useEffect — Handles data fetching and synchronization
-
-
-
-useContext — Enables theme switching (light/dark)
-
-
-
-StrictMode — Detects potential issues during development
-
-React Router DOM
-
-
-
-
-
-Powers navigation across pages
-
-
-
-Hooks:
-
-
-
-
-
-useLoaderData — Loads data for routes
-
-
-
-useParams, useLocation, useNavigation — Manages URL and navigation
-
-
-
-useRouteError, useMatches — Handles errors and breadcrumbs
-
-
-
-Components: RouterProvider, Link, Outlet, and more
-
-Redux Toolkit
-
-
-
-
-
-Manages global state for cart, favorites, and filters
-
-
+Global state management (cart, favorites, filters)
 
 Tools:
 
+createSlice, useDispatch, useSelector, createSelector
 
+🧾 React Hook Form
 
+Form handling with validation and submission
 
+useForm for field registration and state control
 
-createSlice — Defines reducers and actions
+📚 Additional Libraries
 
+react-icons — Icons (e.g. heart, cart)
 
+react-loading-skeleton — Skeletons for loading states
 
-useDispatch, useSelector — Integrates state with components
+vite — Lightning-fast bundler
 
+sass — SCSS for styling components
 
-
-createSelector — Optimizes data selection
-
-React Hook Form
-
-
-
-
-
-Simplifies form handling
-
-
-
-useForm hook: Supports field registration, validation, submission, and reset
-
-Additional Libraries
-
-
-
-
-
-react-icons — Displays icons (e.g., heart, cart)
-
-
-
-react-loading-skeleton — Shows loading skeletons for products and pages
-
-
-
-vite — Enables fast project build and development
-
-
-
-sass — Styles components using .scss files
-
-
-
-👥 Project Team
-
-Oleg Pykhonin
-
-
-
-
-
-Routing: Implemented React Router v6.4+ with loaders and error handling
-
-
-
-Main Page: Built category block and discounted products section
-
-
-
-All Products: Created full product showcase with filtering and sorting
-
-
-
-Discounted Products: Developed a dedicated page for promotional items
-
-
-
-Favorites: Built favorites page with filtering and navigation
-
-
-
-Breadcrumbs: Implemented using useMatches
-
-
-
-Dark Theme: Enabled theme switching with Local Storage persistence
-
-
-
-Styling & Adaptivity: Ensured design fidelity and UX consistency
-
-
-
-Deployment: Configured and published project on Render
-
-
-
-Documentation: Co-authored README.md
-
+👨‍💻 Project Team & Contributions
 Nikita Shcherbakov — Team Lead
 
+Architecture, code reviews, task management
 
+Built:
 
+Product Page
 
+Cart with cost calculation & local persistence
 
-Managed team tasks, deadlines, and quality control
-
-
-
-Conducted meetings, code reviews, and technical consulting
-
-
-
-Made architectural decisions to ensure project quality
-
-
-
-Footer: Built responsive footer with links and contacts
-
-
-
-Product Page: Created detailed product cards with cart and favorites functionality
-
-
-
-Cart: Implemented adding/removing products, cost calculation, and Local Storage persistence
+Responsive Footer
 
 Andrii Boiko
 
+Categories page and filter navigation
 
+5% Discount form with validation
 
+Product of the Day (50% promo modal)
 
+Responsive design, skeletons, refactoring
 
-Categories: Developed category display on the main page and a dedicated categories page
+README documentation
 
+Oleg Pykhonin
 
+Routing with loaders and error handling
 
-Products by Category: Enabled filtering and navigation to product details
+All Products, Favorites, and Discounted Products pages
 
+Breadcrumbs via useMatches
 
+Dark Theme with Local Storage
 
-5% Discount Form: Built form with validation and submission confirmation
-
-
-
-Product of the Day: Created modal for daily promotions with cart integration
-
-
-
-Skeletons: Added loading skeletons for products and pages
-
-
-
-Adaptivity: Ensured responsive design across all devices
-
-
-
-Refactoring: Improved code quality and adherence to style guides
-
-
-
-Documentation: Contributed to README.md preparation
-
-
+Deployment on Render
 
 Alina Miroshkina
 
+Header (logo, theme toggle, cart/favorites icons)
 
+Navigation for desktop & mobile
 
+Banner, 404 Page, and design adaptation from Figma
 
+CSS Modules & global styles
 
-Header: Designed header with logo, theme switcher, and cart/favorites icons
+State with Redux Toolkit & React Context
 
+📦 Project Highlights
 
+⚙️ Fully functional e-commerce flow
 
-Navigation: Built desktop (NavMenu) and mobile (ModalNavMenu) menus
+🎨 Pixel-perfect design based on Figma
 
+🌐 Deployed and accessible online
 
-
-Banner: Created section with image, text, and navigation button
-
-
-
-404 Page: Designed and implemented responsive error page
-
-
-
-Themes: Supported light/dark theme switching with Local Storage
-
-
-
-Styling: Used CSS Modules and global styles
-
-
-
-State Management: Leveraged Redux Toolkit for header icons and React Context for themes
-
-
-
-Design Integration: Adapted components to match Figma design
-
-
-
-📬 Contact
-
-This project is documented in English for global accessibility. I am fluent in German and happy to provide additional documentation or communication in German as needed.
+🧩 Modular, maintainable codebase with best practices
