@@ -8,6 +8,24 @@ ProductsGarden is a responsive e-commerce web application designed for gardening
 
 🔗 Figma Design:https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=5251-7386&p=f&t=BAqCx0v2PXL8MsTk-0
 
+👨‍💻 Project Team & Contributions
+
+### 👨‍💻 Oleg Pykhonin
+
+- **Routing**: Implemented React Router v6.4+ with loaders and error handling  
+- **Home Page**: Built the category block and discounted products section  
+- **Product Card**: Created a reusable component used across all sections  
+- **All Products**: Developed the full product showcase with filtering and sorting  
+- **Discounted Products**: Created a dedicated page for promotional items  
+- **Favorites**: Built the favorites page with filtering and navigation  
+- **Breadcrumbs**: Implemented using the `useMatches` hook  
+- **Dark Theme**: Enabled theme switching with persistence in Local Storage  
+- **Styling & Responsiveness**: Ensured design consistency and user experience across devices  
+- **Optimization & Refactoring**: Improved component performance and maintainability  
+- **Deployment**: Configured and deployed the project on Render  
+- **Documentation**: Co-authored the `README.md`
+
+
 ✨ Key Features
 
 🛍️ Product Browsing with detailed views
@@ -70,24 +88,6 @@ react-loading-skeleton — Skeletons for loading states
 vite — Lightning-fast bundler
 
 sass — SCSS for styling components
-
-👨‍💻 Project Team & Contributions
-
-### 👨‍💻 Oleg Pykhonin
-
-- **Routing**: Implemented React Router v6.4+ with loaders and error handling  
-- **Home Page**: Built the category block and discounted products section  
-- **Product Card**: Created a reusable component used across all sections  
-- **All Products**: Developed the full product showcase with filtering and sorting  
-- **Discounted Products**: Created a dedicated page for promotional items  
-- **Favorites**: Built the favorites page with filtering and navigation  
-- **Breadcrumbs**: Implemented using the `useMatches` hook  
-- **Dark Theme**: Enabled theme switching with persistence in Local Storage  
-- **Styling & Responsiveness**: Ensured design consistency and user experience across devices  
-- **Optimization & Refactoring**: Improved component performance and maintainability  
-- **Deployment**: Configured and deployed the project on Render  
-- **Documentation**: Co-authored the `README.md`
-
 
 
 ### 👨‍💼 Nikita Shcherbakov — Team Lead
