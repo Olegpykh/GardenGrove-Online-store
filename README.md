@@ -4,8 +4,7 @@ This project is documented in English for global accessibility. I am fluent in G
 
 ProductsGarden is a responsive e-commerce web application designed for gardening enthusiasts. It offers a user-friendly interface to browse, filter, and purchase garden products, with support for themes, discounts, and smooth navigation.
 
-👉 www.code-masters.onrender.com
-
+👉  https://code-masters.onrender.com
 🔗 Figma Design:https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=5251-7386&p=f&t=BAqCx0v2PXL8MsTk-0
 
 ✨ Key Features
