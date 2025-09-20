@@ -1,116 +1,337 @@
-This project is documented in English for global accessibility. I am also fluent in German and happy to provide additional documentation or communication in German as needed.
+ProductsGarden 🌱
 
-ProductsGarden
-ProductsGarden is an online store for garden products. Users can search, filter, and sort products, add them to favorites or cart, receive discounts, and place orders. Additionally, theme switching is available.
-Links
+ProductsGarden is an online store for garden products, offering a seamless user experience to browse, filter, and sort products, add them to favorites or cart, apply discounts, and place orders. The application supports light and dark themes and is fully responsive for all devices.
 
-Demo: https://code-masters.onrender.com
-Figma Design: https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=5251-7386&p=f&t=BAqCx0v2PXL8MsTk-0
 
-Main Functionality
 
-View all products with detailed information
-Filter by categories and price
-Sort products (by price, alphabetically, etc.)
+🔗 Links
+
+
+
+
+
+Demo: code-masters.onrender.com
+
+
+
+Figma Design: Figma Link
+
+
+
+✨ Features
+
+
+
+
+
+Browse all products with detailed information
+
+
+
+Filter products by categories and price
+
+
+
+Sort products by price, name, or other criteria
+
+
+
 Add products to favorites
-Add products to cart and place orders
-5% discount coupon for first orders
-Random daily 50% discount on one product
-Switch between light and dark themes
-Responsive design
 
-Technology Stack
+
+
+Manage cart and place orders
+
+
+
+Apply a 5% discount coupon for first orders
+
+
+
+Enjoy a random daily 50% discount on one product
+
+
+
+Toggle between light and dark themes
+
+
+
+Fully responsive design for all screen sizes
+
+
+
+🛠 Technology Stack
+
 React
 
-Main framework for building the interface
+
+
+
+
+Core framework for building the user interface
+
+
+
 Hooks:
 
-useState — Managing local state (filters, modals, cart)
-useEffect — Data loading and synchronization
-useContext — Theme switching (light/dark)
-StrictMode — Identifying potential issues during development
 
 
+
+
+useState — Manages local state (filters, modals, cart)
+
+
+
+useEffect — Handles data fetching and synchronization
+
+
+
+useContext — Enables theme switching (light/dark)
+
+
+
+StrictMode — Detects potential issues during development
 
 React Router DOM
 
-Navigation between pages
+
+
+
+
+Powers navigation across pages
+
+
+
 Hooks:
 
-useLoaderData — Data loading in routes
-useParams, useLocation, useNavigation — URL and navigation handling
-useRouteError, useMatches — Error handling and breadcrumbs
 
 
-Components: RouterProvider, Link, Outlet, etc.
+
+
+useLoaderData — Loads data for routes
+
+
+
+useParams, useLocation, useNavigation — Manages URL and navigation
+
+
+
+useRouteError, useMatches — Handles errors and breadcrumbs
+
+
+
+Components: RouterProvider, Link, Outlet, and more
 
 Redux Toolkit
 
-Global state management (cart, favorites, filters)
-Tools used:
-
-createSlice — Reducers and actions
-useDispatch, useSelector — State management in components
-createSelector — Optimized data selection
 
 
+
+
+Manages global state for cart, favorites, and filters
+
+
+
+Tools:
+
+
+
+
+
+createSlice — Defines reducers and actions
+
+
+
+useDispatch, useSelector — Integrates state with components
+
+
+
+createSelector — Optimizes data selection
 
 React Hook Form
 
-Form handling
-useForm hook: Field registration, validation, submission, and reset
+
+
+
+
+Simplifies form handling
+
+
+
+useForm hook: Supports field registration, validation, submission, and reset
 
 Additional Libraries
 
-react-icons — Displaying icons (heart, cart, etc.)
-react-loading-skeleton — Skeletons for loading states
-vite — Project build and fast development
-sass — Component styling with .scss files
 
-Project Team
+
+
+
+react-icons — Displays icons (e.g., heart, cart)
+
+
+
+react-loading-skeleton — Shows loading skeletons for products and pages
+
+
+
+vite — Enables fast project build and development
+
+
+
+sass — Styles components using .scss files
+
+
+
+👥 Project Team
 
 Oleg Pykhonin
 
-Routing: React Router v6.4+ with loaders and error handling
-Main Page: Category block and discounted products
-Product Card: Universal component for all sections
-All Products: Full showcase with filtering and sorting
-Discounted Products: Dedicated page for promotional products
-Favorites: Page with filtering and navigation
-Breadcrumbs: Implementation using useMatches
-Dark Theme: Switching and saving to Local Storage
-Styling and Adaptivity: Adherence to design and UX
-Optimization and Refactoring: Component improvements
-Deployment: Setup and publishing on Render
+
+
+
+
+Routing: Implemented React Router v6.4+ with loaders and error handling
+
+
+
+Main Page: Built category block and discounted products section
+
+
+
+All Products: Created full product showcase with filtering and sorting
+
+
+
+Discounted Products: Developed a dedicated page for promotional items
+
+
+
+Favorites: Built favorites page with filtering and navigation
+
+
+
+Breadcrumbs: Implemented using useMatches
+
+
+
+Dark Theme: Enabled theme switching with Local Storage persistence
+
+
+
+Styling & Adaptivity: Ensured design fidelity and UX consistency
+
+
+
+Deployment: Configured and published project on Render
+
+
+
 Documentation: Co-authored README.md
 
-Nikita Shcherbakov (Shcherbakov Mykyta) — Project Team Lead
+Nikita Shcherbakov — Team Lead
 
-Team management: Task delegation, deadline and quality control
-Conducting meetings, code reviews, and technical consulting
-Architectural decisions and maintaining the project's technical quality
-Footer: Development of a responsive footer with links and contacts
-Product Page: Detailed product card with cart and favorites functionality
-Cart: Adding/removing products, cost calculation, saving to Local Storage
+
+
+
+
+Managed team tasks, deadlines, and quality control
+
+
+
+Conducted meetings, code reviews, and technical consulting
+
+
+
+Made architectural decisions to ensure project quality
+
+
+
+Footer: Built responsive footer with links and contacts
+
+
+
+Product Page: Created detailed product cards with cart and favorites functionality
+
+
+
+Cart: Implemented adding/removing products, cost calculation, and Local Storage persistence
 
 Andrii Boiko
 
-Categories: Display on the main page and a dedicated categories page
-Products by Category: Filtering and navigation to details
-5% Discount Form: Implementation, validation, and submission confirmation
-Product of the Day: Modal with promotion and cart addition
-Skeletons: For loading states of products and pages
-Adaptivity: Ensuring proper display on all screen sizes
-Refactoring: Code improvements and adherence to style guide
-Documentation: Preparation and formatting of README.md
+
+
+
+
+Categories: Developed category display on the main page and a dedicated categories page
+
+
+
+Products by Category: Enabled filtering and navigation to product details
+
+
+
+5% Discount Form: Built form with validation and submission confirmation
+
+
+
+Product of the Day: Created modal for daily promotions with cart integration
+
+
+
+Skeletons: Added loading skeletons for products and pages
+
+
+
+Adaptivity: Ensured responsive design across all devices
+
+
+
+Refactoring: Improved code quality and adherence to style guides
+
+
+
+Documentation: Contributed to README.md preparation
+
+
 
 Alina Miroshkina
 
-Header (Header.jsx): Logo, theme switcher, cart, and favorites icons
-Navigation: Desktop menu (NavMenu) and mobile (ModalNavMenu)
-Banner: Section with image, text, and navigation button
-404 Page: Design and responsive layout
-Themes: Support for light and dark themes, saving user choice
-Styling: CSS Modules and global styles
-State Management: Redux Toolkit (header icons), React Context (theme)
-Design Integration: Adapting components to the Figma design
+
+
+
+
+Header: Designed header with logo, theme switcher, and cart/favorites icons
+
+
+
+Navigation: Built desktop (NavMenu) and mobile (ModalNavMenu) menus
+
+
+
+Banner: Created section with image, text, and navigation button
+
+
+
+404 Page: Designed and implemented responsive error page
+
+
+
+Themes: Supported light/dark theme switching with Local Storage
+
+
+
+Styling: Used CSS Modules and global styles
+
+
+
+State Management: Leveraged Redux Toolkit for header icons and React Context for themes
+
+
+
+Design Integration: Adapted components to match Figma design
+
+
+
+📬 Contact
+
+This project is documented in English for global accessibility. I am fluent in German and happy to provide additional documentation or communication in German as needed.
