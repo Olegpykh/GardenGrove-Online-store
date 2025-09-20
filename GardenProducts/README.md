@@ -1,108 +1,130 @@
-# ProductsGarden
+**This project is documented in English for global accessibility. I am fluent in German and happy to provide additional documentation or communication in German as needed.**
 
-**ProductsGarden** — это интернет-магазин товаров для сада. Пользователи могут искать, фильтровать и сортировать товары, добавлять их в избранное и корзину, получать скидки и оформлять заказы. Также доступна смена темы оформления.
+🌱 ProductsGarden
 
-## Ссылки
+ProductsGarden is a responsive e-commerce web application designed for gardening enthusiasts. It offers a user-friendly interface to browse, filter, and purchase garden products, with support for themes, discounts, and smooth navigation.
 
-- Демо: https://code-masters.onrender.com  
-- Макет в Figma: https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=5251-7386&p=f&t=BAqCx0v2PXL8MsTk-0
+👉 www.code-masters.onrender.com
 
-## Основной функционал
+🔗 Figma Design:https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=5251-7386&p=f&t=BAqCx0v2PXL8MsTk-0
 
-- Просмотр всех товаров с подробной информацией
-- Фильтрация по категориям и цене
-- Сортировка товаров (по цене, алфавиту и т.д.)
-- Добавление товаров в избранное
-- Добавление товаров в корзину и оформление заказа
-- Купон на скидку 5% при первом заказе
-- Случайная ежедневная скидка 50% на один товар
-- Переключение между светлой и тёмной темой
-- Адаптивная вёрстка
+✨ Key Features
 
-## Стек технологий
+🛍️ Product Browsing with detailed views
 
-### React
+🔎 Filtering & Sorting by categories, price, name, etc.
 
-- Основной фреймворк для построения интерфейса
-- Хуки:
-  - `useState` — управление локальным состоянием (фильтры, модальные окна, корзина)
-  - `useEffect` — загрузка данных и синхронизация
-  - `useContext` — переключение темы (светлая/тёмная)
-  - `StrictMode` — выявление потенциальных проблем в разработке
+❤️ Favorites functionality with persistent storage
 
-### React Router DOM
+🛒 Shopping Cart with full order flow and local persistence
 
-- Навигация между страницами
-- Хуки:
-  - `useLoaderData` — загрузка данных в маршрутах
-  - `useParams`, `useLocation`, `useNavigation` — работа с URL и навигацией
-  - `useRouteError`, `useMatches` — обработка ошибок, хлебные крошки
-- Компоненты: `RouterProvider`, `Link`, `Outlet` и др.
+💸 5% Discount on first orders (via coupon)
 
-### Redux Toolkit
+🎁 50% Daily Random Discount on one product
 
-- Глобальное хранилище состояния (корзина, избранное, фильтры)
-- Используемые инструменты:
-  - `createSlice` — редьюсеры и экшены
-  - `useDispatch`, `useSelector` — работа с состоянием в компонентах
-  - `createSelector` — оптимизация выборки данных
+🌙 Light/Dark Theme Toggle with Local Storage support
 
-### React Hook Form
+📱 Responsive Design for mobile, tablet, and desktop
 
-- Работа с формами
-- Хук `useForm`: регистрация полей, валидация, отправка, сброс
+🛠 Technology Stack
+⚛️ React
 
-### Дополнительные библиотеки
+Core UI Framework
 
-- `react-icons` — отображение иконок (сердце, корзина и др.)
-- `react-loading-skeleton` — скелетоны при загрузке
-- `vite` — сборка проекта и быстрая разработка
-- `sass` — стилизация компонентов через `.scss` файлы
+Hooks Used:
 
-## Команда проекта
+useState, useEffect, useContext
 
-### Никита Щербаков (Shcherbakov Mykyta) — тимлид проекта
+StrictMode for dev validation
 
-- Организация работы команды: распределение задач, контроль сроков и качества
-- Проведение созвонов, код-ревью, техническое консультирование
-- Архитектурные решения и поддержка технического уровня проекта
-- **Футер**: разработка адаптивного футера со ссылками и контактами
-- **Страница товара**: подробная карточка товара с добавлением в корзину и избранное
-- **Корзина**: добавление и удаление товаров, расчёт стоимости, сохранение в Local Storage
+🔄 React Router DOM (v6.4+)
 
-### Андрей Бойко (Andrii Boiko)
+Navigation & routing
 
-- **Категории**: отображение на главной странице, страница всех категорий
-- **Товары по категориям**: фильтрация, переход к деталям
-- **Форма скидки 5%**: реализация и валидация формы, подтверждение отправки
-- **Товар дня**: модальное окно с акцией и добавлением в корзину
-- **Скелетоны**: при загрузке товаров и страниц
-- **Адаптивность**: проверка отображения на всех экранах
-- **Рефакторинг**: улучшение кода, соответствие стайлгайду
-- **Документация**: подготовка и оформление `README.md`
+Hooks Used:
 
-### Олег Пыхонин (Oleg Pykhonin)
+useLoaderData, useParams, useLocation, useNavigation, useRouteError, useMatches
 
-- **Маршрутизация**: React Router v6.4+ с loaders и обработкой ошибок
-- **Главная страница**: блок категорий и товары со скидкой
-- **Карточка товара**: универсальный компонент для всех разделов
-- **Все товары**: полная витрина с фильтрацией и сортировкой
-- **Товары со скидкой**: отдельная страница акционных товаров
-- **Избранное**: страница с фильтрацией и переходами
-- **Хлебные крошки**: реализация с использованием `useMatches`
-- **Тёмная тема**: переключение и сохранение в Local Storage
-- **Стили и адаптивность**: соответствие макету и UX
-- **Оптимизация и рефакторинг компонентов**
-- **Деплой**: настройка и публикация на Render
-- **Документация**: соавторство `README.md`
+Components: RouterProvider, Link, Outlet
 
-### Алина Мирошкина (Alina Miroshkina)
+📦 Redux Toolkit
 
-- **Шапка сайта** (`Header.jsx`): логотип, переключение темы, иконки корзины и избранного
-- **Навигация**: меню для десктопа (`NavMenu`) и мобильное (`ModalNavMenu`)
-- **Баннер**: секция с изображением, текстом и кнопкой перехода
-- **Страница 404**: оформление и адаптивная вёрстка
-- **Темы**: поддержка светлой и тёмной темы, сохранение выбора
-- **Стилизация**: CSS Modules и глобальные стили
-- **Работа с состоянием**: Redux Toolkit (иконки в хедере), React Context (тема)
-- **Работа с макетом**: адаптация компонентов под дизайн из Figma
+Global state management (cart, favorites, filters)
+
+Tools:
+
+createSlice, useDispatch, useSelector, createSelector
+
+🧾 React Hook Form
+
+Form handling with validation and submission
+
+useForm for field registration and state control
+
+📚 Additional Libraries
+
+react-icons — Icons (e.g. heart, cart)
+
+react-loading-skeleton — Skeletons for loading states
+
+vite — Lightning-fast bundler
+
+sass — SCSS for styling components
+
+👨‍💻 Project Team & Contributions
+
+### 👨‍💻 Oleg Pykhonin
+
+- **Routing**: Implemented React Router v6.4+ with loaders and error handling  
+- **Home Page**: Built the category block and discounted products section  
+- **Product Card**: Created a reusable component used across all sections  
+- **All Products**: Developed the full product showcase with filtering and sorting  
+- **Discounted Products**: Created a dedicated page for promotional items  
+- **Favorites**: Built the favorites page with filtering and navigation  
+- **Breadcrumbs**: Implemented using the `useMatches` hook  
+- **Dark Theme**: Enabled theme switching with persistence in Local Storage  
+- **Styling & Responsiveness**: Ensured design consistency and user experience across devices  
+- **Optimization & Refactoring**: Improved component performance and maintainability  
+- **Deployment**: Configured and deployed the project on Render  
+- **Documentation**: Co-authored the `README.md`
+
+
+
+### 👨‍💼 Nikita Shcherbakov — Team Lead
+
+- **Architecture, Code Reviews, Task Management**: Oversaw development process, ensured code quality and timely delivery  
+- **Product Page**: Built detailed product view with cart and favorites functionality  
+- **Cart**: Implemented cart logic with cost calculation and local storage persistence  
+- **Footer**: Created a fully responsive footer with links and contact info
+
+---
+
+### 👨‍💻 Andrii Boiko
+
+- **Categories Page**: Developed category listing and filtering functionality  
+- **5% Discount Form**: Built form with validation, confirmation, and user feedback  
+- **Product of the Day**: Implemented 50% discount modal with cart integration  
+- **Responsive Design**: Ensured mobile/tablet/desktop compatibility across pages  
+- **Skeletons**: Added loading skeletons for better user experience  
+- **Code Refactoring**: Improved code readability and consistency
+
+---
+
+### 👩‍💻 Alina Miroshkina
+
+- **Header**: Designed and implemented header with logo, theme toggle, and cart/favorites icons  
+- **Navigation**: Built responsive navigation for both desktop (`NavMenu`) and mobile (`ModalNavMenu`)  
+- **Banner & 404 Page**: Created visually consistent banner section and custom 404 page  
+- **Styling**: Used CSS Modules and global styles for theme consistency  
+- **Design Integration**: Adapted all components to match the Figma designtext
+
+📦 Project Highlights
+
+⚙️ Fully functional e-commerce flow
+
+🎨 Pixel-perfect design based on Figma
+
+🌐 Deployed and accessible online
+
+🧩 Modular, maintainable codebase with best practices
+
