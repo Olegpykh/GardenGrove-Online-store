@@ -6,7 +6,7 @@ ProductsGarden is a responsive e-commerce web application designed for gardening
 
 👉 www.code-masters.onrender.com
 
-🔗 Figma Design: Figma Link Here (replace with actual URL)
+🔗 Figma Design:https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=5251-7386&p=f&t=BAqCx0v2PXL8MsTk-0
 
 ✨ Key Features
 
@@ -72,53 +72,51 @@ vite — Lightning-fast bundler
 sass — SCSS for styling components
 
 👨‍💻 Project Team & Contributions
-Nikita Shcherbakov — Team Lead
 
-Architecture, code reviews, task management
+### 👨‍💻 Oleg Pykhonin
 
-Built:
+- **Routing**: Implemented React Router v6.4+ with loaders and error handling  
+- **Home Page**: Built the category block and discounted products section  
+- **Product Card**: Created a reusable component used across all sections  
+- **All Products**: Developed the full product showcase with filtering and sorting  
+- **Discounted Products**: Created a dedicated page for promotional items  
+- **Favorites**: Built the favorites page with filtering and navigation  
+- **Breadcrumbs**: Implemented using the `useMatches` hook  
+- **Dark Theme**: Enabled theme switching with persistence in Local Storage  
+- **Styling & Responsiveness**: Ensured design consistency and user experience across devices  
+- **Optimization & Refactoring**: Improved component performance and maintainability  
+- **Deployment**: Configured and deployed the project on Render  
+- **Documentation**: Co-authored the `README.md`
 
-Product Page
 
-Cart with cost calculation & local persistence
 
-Responsive Footer
+### 👨‍💼 Nikita Shcherbakov — Team Lead
 
-Andrii Boiko
+- **Architecture, Code Reviews, Task Management**: Oversaw development process, ensured code quality and timely delivery  
+- **Product Page**: Built detailed product view with cart and favorites functionality  
+- **Cart**: Implemented cart logic with cost calculation and local storage persistence  
+- **Footer**: Created a fully responsive footer with links and contact info
 
-Categories page and filter navigation
+---
 
-5% Discount form with validation
+### 👨‍💻 Andrii Boiko
 
-Product of the Day (50% promo modal)
+- **Categories Page**: Developed category listing and filtering functionality  
+- **5% Discount Form**: Built form with validation, confirmation, and user feedback  
+- **Product of the Day**: Implemented 50% discount modal with cart integration  
+- **Responsive Design**: Ensured mobile/tablet/desktop compatibility across pages  
+- **Skeletons**: Added loading skeletons for better user experience  
+- **Code Refactoring**: Improved code readability and consistency
 
-Responsive design, skeletons, refactoring
+---
 
-README documentation
+### 👩‍💻 Alina Miroshkina
 
-Oleg Pykhonin
-
-Routing with loaders and error handling
-
-All Products, Favorites, and Discounted Products pages
-
-Breadcrumbs via useMatches
-
-Dark Theme with Local Storage
-
-Deployment on Render
-
-Alina Miroshkina
-
-Header (logo, theme toggle, cart/favorites icons)
-
-Navigation for desktop & mobile
-
-Banner, 404 Page, and design adaptation from Figma
-
-CSS Modules & global styles
-
-State with Redux Toolkit & React Context
+- **Header**: Designed and implemented header with logo, theme toggle, and cart/favorites icons  
+- **Navigation**: Built responsive navigation for both desktop (`NavMenu`) and mobile (`ModalNavMenu`)  
+- **Banner & 404 Page**: Created visually consistent banner section and custom 404 page  
+- **Styling**: Used CSS Modules and global styles for theme consistency  
+- **Design Integration**: Adapted all components to match the Figma designtext
 
 📦 Project Highlights
 
