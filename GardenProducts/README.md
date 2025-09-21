@@ -1,10 +1,14 @@
+<img width="1434" height="722" alt="Bildschirmfoto 2025-09-20 um 19 58 09" src="https://github.com/user-attachments/assets/3ba09557-172e-4d72-b480-ba22ef735f3f" />
+
+
+
 **This project is documented in English for global accessibility. I am fluent in German and happy to provide additional documentation or communication in German as needed.**
 
 🌱 ProductsGarden
 
 ProductsGarden is a responsive e-commerce web application designed for gardening enthusiasts. It offers a user-friendly interface to browse, filter, and purchase garden products, with support for themes, discounts, and smooth navigation.
 
-👉  https://code-masters.onrender.com
+👉  https://garden-grove-online-store-lsye.vercel.app/
 
 🔗 Figma Design:https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=5251-7386&p=f&t=BAqCx0v2PXL8MsTk-0
 
