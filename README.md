@@ -1,4 +1,5 @@
-<img width="636" height="320" alt="Bildschirmfoto 2025-09-20 um 19" src="https://github.com/user-attachments/assets/3e971a5f-8ba3-4315-a3c8-117decdead97" />
+<img width="1434" height="722" alt="Bildschirmfoto 2025-09-20 um 19 58 09" src="https://github.com/user-attachments/assets/7c1ea0ba-3845-489d-bf78-853012b024fa" />
+
 
 
 
