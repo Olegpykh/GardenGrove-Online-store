@@ -1,3 +1,9 @@
+<img width="636" height="320" alt="Bildschirmfoto 2025-09-20 um 19" src="https://github.com/user-attachments/assets/3e971a5f-8ba3-4315-a3c8-117decdead97" />
+
+
+
+
+
 This project is documented in English for global accessibility. I am fluent in German and happy to provide additional documentation or communication in German as needed.
 
 🌱 ProductsGarden
